@@ -1,0 +1,185 @@
+package OO;
+
+public class ServidorPublico {
+	
+	private String nome;
+	private String foto;
+	private String orgao;
+	private String vinculo;
+	private String cargo;
+	private String lotacao;
+	private String exercicio;
+	private String email;
+	private String telefone;
+	private String celular;
+	private String cpf;
+	private String naturalidade;
+	private int matricula;
+	private int idade;
+	private int tempoContribuicao;
+	private double salario;
+	
+	
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+
+	public String getOrgao() {
+		return orgao;
+	}
+
+	public void setOrgao(String orgao) {
+		this.orgao = orgao;
+	}
+
+	public String getVinculo() {
+		return vinculo;
+	}
+
+	public void setVinculo(String vinculo) {
+		this.vinculo = vinculo;
+	}
+
+	public String getCargo() {
+		return cargo;
+	}
+
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
+	}
+
+	public String getLotacao() {
+		return lotacao;
+	}
+
+	public void setLotacao(String lotacao) {
+		this.lotacao = lotacao;
+	}
+
+	public String getExercicio() {
+		return exercicio;
+	}
+
+	public void setExercicio(String exercicio) {
+		this.exercicio = exercicio;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+	public String getCelular() {
+		return celular;
+	}
+
+	public void setCelular(String celular) {
+		this.celular = celular;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getNaturalidade() {
+		return naturalidade;
+	}
+
+	public void setNaturalidade(String naturalidade) {
+		this.naturalidade = naturalidade;
+	}
+
+	public int getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
+
+	public int getIdade() {
+		return idade;
+	}
+
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+
+	public int getTempoContribuicao() {
+		return tempoContribuicao;
+	}
+
+	public void setTempoContribuicao(int tempoContribuicao) {
+		this.tempoContribuicao = tempoContribuicao;
+	}
+
+	public double getSalario() {
+		return salario;
+	}
+
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+	
+	public double calcularSalarioHorasExtras(int horasTrabalhadas) {
+		double salarioMensal = salario + horasTrabalhadas * 40;
+		return (salarioMensal);
+		
+	}
+
+
+
+	public static void main(String[] args) {
+
+		ServidorPublico andre = new ServidorPublico();
+		andre.setNome("André Souza");
+		andre.setMatricula(1);
+		andre.setCargo("Auditor de TI");
+		System.out.println(andre.calcularSalarioHorasExtras(10));
+		
+		ServidorPublico luana = new ServidorPublico();
+		luana.setNome("Luana Souza");
+		luana.setMatricula(2);
+		luana.setCargo("Coordenadora");
+		
+		ServidorPublico henry = new ServidorPublico();
+		henry.setNome("Henry Souza");
+		henry.setMatricula(3);
+		henry.setCargo("Analista");
+		
+		ServidorPublico victoria = new ServidorPublico();
+		victoria.setNome("Victoria Souza");
+		victoria.setMatricula(4);
+		victoria.setCargo("Analista");
+
+	}
+
+}

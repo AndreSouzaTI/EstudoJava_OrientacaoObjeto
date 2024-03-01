@@ -1,0 +1,46 @@
+package OO;
+
+public class ServidorPublico {
+	
+	private String nome;
+	private String foto;
+	private String orgao;
+	private String vinculo;
+	private String cargo;
+	private String lotacao;
+	private String exercicio;
+	private String email;
+	private String telefone;
+	private String celular;
+	private String cpf;
+	private String naturalidade;
+	private int matricula;
+	private int idade;
+	private int tempoContribuicao;
+	private double salario;
+
+	public static void main(String[] args) {
+
+		ServidorPublico andre = new ServidorPublico();
+		andre.nome = "André Souza";
+		andre.matricula = 1;
+		andre.cargo = "Auditor de TI";
+		
+		ServidorPublico luana = new ServidorPublico();
+		luana.nome = "Luana Souza";
+		luana.matricula = 2;
+		luana.cargo = "Coordenadora";
+		
+		ServidorPublico henry = new ServidorPublico();
+		henry.nome = "Henry Souza";
+		henry.matricula = 3;
+		henry.cargo = "Analista";
+		
+		ServidorPublico victoria = new ServidorPublico();
+		victoria.nome = "Victoria Souza";
+		victoria.matricula = 4;
+		victoria.cargo = "Analista";
+
+	}
+
+}
