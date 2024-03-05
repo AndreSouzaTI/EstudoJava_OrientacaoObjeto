@@ -1,7 +1,5 @@
 package OO;
 
-import java.util.List;
-
 public class TestaString {
 
 	public static void main(String[] args) {
